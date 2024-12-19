@@ -1,2 +1,2 @@
-# CodingAccelerator-Epreuves
-Epreuves de Coding Acceleator
+# CodingAccelerator-EpreuveTerre
+Epreuve de la Terre Coding Acceleator
