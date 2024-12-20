@@ -9,9 +9,7 @@ def reverse(string):
     return rev_string
 
 if __name__ == "__main__":
-    try:
-        if len(sys.argv) != 2:
-            raise Exception
-        print(reverse(sys.argv[1]))
-    except Exception:
-        print("erreur.")
+    if len(sys.argv) != 2:
+        print(f"usage: python3 {sys.argv[0]} string",file=sys.stderr)
+        sys.exit(-1)
+    print(reverse(sys.argv[1]))

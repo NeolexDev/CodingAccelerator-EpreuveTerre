@@ -12,10 +12,10 @@ def print_alphabet_n(n, end=""):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print(f"usage: {sys.argv[0]} letter")
+    if len(sys.argv) != 2:
+        print(f"usage: python3 {sys.argv[0]} letter",file=sys.stderr)
         sys.exit(-1)
     if sys.argv[1] not in string.ascii_letters:
-        print("first argument should a letter")
+        print("Usage: l'argument doit etre une lettre",file=sys.stderr)
         sys.exit(-1)
     print_alphabet_n(sys.argv[1],end="\n")
